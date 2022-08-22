@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.guna2ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.label1 = new System.Windows.Forms.Label();
@@ -102,10 +103,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2ProgressBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "GHOST bootstrapper";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
